@@ -166,3 +166,17 @@ select {
 /*
 *  html5resetcss
 */
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    color: black;
+}
+
+.banner {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5e24e1898ee5021e015f86b4/1616468237947-EM80ZXKS2GSWJQJ7GEY6/IMGL2579-2.jpg");
+}
