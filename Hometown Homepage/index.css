@@ -166,17 +166,87 @@ select {
 /*
 *  html5resetcss
 */
-
-.wrapper {
+#wrapper {
     width: 90%;
     display: flex;
     justify-content: center;
 }
 
-.body {
-    color: black;
+#grid-wrapper {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "1"
+        "2"
+        "3";
 }
 
-.banner {
+#banner {
     background-image: url("https://images.squarespace-cdn.com/content/v1/5e24e1898ee5021e015f86b4/1616468237947-EM80ZXKS2GSWJQJ7GEY6/IMGL2579-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: xx-large;
+    gap: 5px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+#banner-box-1 {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+#banner-box-2 {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+#activities {
+    grid-area: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+#activities-banner {
+    grid-area: 4;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#activities-box-1 {
+    grid-area: 5;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#activities-box-2 {
+    grid-area: 6;
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#activities-box-3 {
+    grid-area: 7;
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#guide {
+    grid-area: 3;
 }
