@@ -253,4 +253,5 @@ select {
 
 #guide {
     grid-area: 3;
+    background-color: rgb(18, 155, 235);
 }
