@@ -265,4 +265,25 @@ select {
 #guide {
     grid-area: 3;
     background-color: rgb(18, 155, 235);
+    display: inline-flex;
+}
+
+#guide-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#guide-box-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#guide-box-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
